@@ -6,6 +6,7 @@ import org.openqa.selenium.Keys;
 import pages.TestotomasyonuPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class TestotomasyonuStepdefinitions {
     TestotomasyonuPage testotomasyonuPage = new TestotomasyonuPage();
@@ -51,5 +52,15 @@ public class TestotomasyonuStepdefinitions {
 
         Assertions.assertEquals(expectedAramaSonucu,actualAramaSonucu);
 
+    }
+
+    @When("arama kutusuna {string} yazip aratir")
+    public void aramaKutusunaYazipAratir(String istenenKelime) {
+        testotomasyonuPage.aramaKutusu.sendKeys(istenenKelime + Keys.ENTER);
+    }
+
+    @And("senkronizasyon icin {int} saniye bekler")
+    public void senkronizasyonIcinSaniyeBekler(int saniye) {
+        ReusableMethods.bekle(saniye);
     }
 }

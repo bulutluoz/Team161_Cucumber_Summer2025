@@ -17,6 +17,7 @@ public class TestotomasyonuStepdefinitions {
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
     }
     @When("arama kutusuna phone yazip aratir")
+
     public void arama_kutusuna_phone_yazip_aratir() {
         testotomasyonuPage.aramaKutusu.sendKeys("phone" + Keys.ENTER);
     }
@@ -27,8 +28,28 @@ public class TestotomasyonuStepdefinitions {
 
         Assertions.assertNotEquals(unExpectedAramaSonucu,actualAramaSonucu);
     }
+
     @Then("sayfayi kapatir")
     public void sayfayi_kapatir() {
        Driver.quitDriver();
+    }
+
+    @When("arama kutusuna dress yazip aratir")
+    public void aramaKutusunaDressYazipAratir() {
+        testotomasyonuPage.aramaKutusu.sendKeys("dress" + Keys.ENTER);
+    }
+
+    @When("arama kutusuna Java yazip aratir")
+    public void aramaKutusunaJavaYazipAratir() {
+        testotomasyonuPage.aramaKutusu.sendKeys("Java" + Keys.ENTER);
+    }
+
+    @Then("arama sonucunda urun bulunamadigini test eder")
+    public void aramaSonucundaUrunBulunamadiginiTestEder() {
+        String expectedAramaSonucu = ConfigReader.getProperty("toUnExpectedSonucYazisi");
+        String actualAramaSonucu = testotomasyonuPage.aramaSonucYaziElementi.getText();
+
+        Assertions.assertEquals(expectedAramaSonucu,actualAramaSonucu);
+
     }
 }

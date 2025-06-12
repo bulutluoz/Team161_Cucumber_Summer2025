@@ -25,7 +25,7 @@
       And senkronizasyon icin 2 saniye bekler
       Then sayfayi kapatir
 
-    Scenario: TC10 Kullanici gecersiz password yazdiginda giris yapamamali
+    Scenario: TC09 Kullanici gecersiz password yazdiginda giris yapamamali
       Given kullanici "toUrl" anasayfaya gider
       Then account butonuna basar
       And senkronizasyon icin 2 saniye bekler
@@ -36,7 +36,7 @@
       And senkronizasyon icin 2 saniye bekler
       Then sayfayi kapatir
 
-    Scenario: TC11 Kullanici gecersiz email gecersiz password yazdiginda giris yapamamali
+    Scenario: TC10 Kullanici gecersiz email gecersiz password yazdiginda giris yapamamali
       Given kullanici "toUrl" anasayfaya gider
       Then account butonuna basar
       And senkronizasyon icin 2 saniye bekler

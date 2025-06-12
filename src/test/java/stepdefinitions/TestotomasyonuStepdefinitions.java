@@ -65,27 +65,38 @@ public class TestotomasyonuStepdefinitions {
     }
 
     @Given("kullanici {string} anasayfaya gider")
-    public void kullanici_anasayfaya_gider(String string) {
-
+    public void kullanici_anasayfaya_gider(String configdenIstenenUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(configdenIstenenUrl));
     }
     @Then("account butonuna basar")
     public void account_butonuna_basar() {
-
+        testotomasyonuPage.accountLinki.click();
     }
     @Then("email olarak {string} girer")
-    public void email_olarak_girer(String string) {
-
+    public void email_olarak_girer(String configdenIstenenMail) {
+        testotomasyonuPage.emailKutusu.sendKeys(ConfigReader.getProperty(configdenIstenenMail));
     }
     @Then("password olarak {string} girer")
-    public void password_olarak_girer(String string) {
-
+    public void password_olarak_girer(String configdenIstenenPassword) {
+        testotomasyonuPage.passwordKutusu.sendKeys(ConfigReader.getProperty(configdenIstenenPassword));
     }
     @Then("signIn butonuna basar")
     public void sign_in_butonuna_basar() {
-
+        testotomasyonuPage.loginButonu.click();
     }
     @Then("basarili giris yapilabildigini test eder")
     public void basarili_giris_yapilabildigini_test_eder() {
+        Assertions.assertTrue(testotomasyonuPage.logoutButonu.isDisplayed());
 
+    }
+
+    @Then("logout olur")
+    public void logoutOlur() {
+        testotomasyonuPage.logoutButonu.click();
+    }
+
+    @And("basarili giris yapilamadigini test eder")
+    public void basariliGirisYapilamadiginiTestEder() {
+        Assertions.assertTrue(testotomasyonuPage.emailKutusu.isDisplayed());
     }
 }

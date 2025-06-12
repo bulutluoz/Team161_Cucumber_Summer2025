@@ -8,7 +8,7 @@
       And password olarak "toGecerliPassword" girer
       Then signIn butonuna basar
       And basarili giris yapilabildigini test eder
-      And 3 saniye bekler
+      And senkronizasyon icin 3 saniye bekler
       And sayfayi kapatir
 
 

@@ -63,4 +63,29 @@ public class TestotomasyonuStepdefinitions {
     public void senkronizasyonIcinSaniyeBekler(int saniye) {
         ReusableMethods.bekle(saniye);
     }
+
+    @Given("kullanici {string} anasayfaya gider")
+    public void kullanici_anasayfaya_gider(String string) {
+
+    }
+    @Then("account butonuna basar")
+    public void account_butonuna_basar() {
+
+    }
+    @Then("email olarak {string} girer")
+    public void email_olarak_girer(String string) {
+
+    }
+    @Then("password olarak {string} girer")
+    public void password_olarak_girer(String string) {
+
+    }
+    @Then("signIn butonuna basar")
+    public void sign_in_butonuna_basar() {
+
+    }
+    @Then("basarili giris yapilabildigini test eder")
+    public void basarili_giris_yapilabildigini_test_eder() {
+
+    }
 }

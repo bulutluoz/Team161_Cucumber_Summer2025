@@ -1,6 +1,8 @@
 
+  @wip
   Feature: US1005 Kullanici Saucedemo sayfasinda alisveris yapar
 
+    @smoke @E2E @regression
     Scenario: TC12 kullanici sectigi urunun sepete eklendigini kontrol eder
 
       Given kullanici "sauceUrl" anasayfaya gider

@@ -24,7 +24,7 @@
       And basarili giris yapilamadigini test eder
       And senkronizasyon icin 2 saniye bekler
       Then sayfayi kapatir
-
+    @smoke
     Scenario: TC10 Kullanici gecersiz password yazdiginda giris yapamamali
       Given kullanici "toUrl" anasayfaya gider
       Then account butonuna basar

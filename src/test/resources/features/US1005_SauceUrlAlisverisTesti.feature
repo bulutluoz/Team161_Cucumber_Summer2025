@@ -1,5 +1,5 @@
 
-  @wip
+
   Feature: US1005 Kullanici Saucedemo sayfasinda alisveris yapar
 
     @smoke @E2E @regression

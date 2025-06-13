@@ -99,4 +99,16 @@ public class TestotomasyonuStepdefinitions {
     public void basariliGirisYapilamadiginiTestEder() {
         Assertions.assertTrue(testotomasyonuPage.emailKutusu.isDisplayed());
     }
+
+    @And("email olarak listede verilen {string} girer")
+    public void emailOlarakListedeVerilenGirer(String listedekiEmail) {
+
+        testotomasyonuPage.emailKutusu.sendKeys(listedekiEmail);
+    }
+
+    @And("password olarak listede verilen {string} girer")
+    public void passwordOlarakListedeVerilenGirer(String listedekiPassword) {
+        testotomasyonuPage.passwordKutusu.sendKeys(listedekiPassword);
+
+    }
 }

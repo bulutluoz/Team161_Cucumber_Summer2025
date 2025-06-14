@@ -1,12 +1,13 @@
 
   Feature: US1004 sadece gecerli bilgilere sahip kullanicilar giris yapar
 
+    @wip
     Scenario: TC08 Kullanici gecerli bilgilerle giris yapabilmeli
       Given kullanici "toUrl" anasayfaya gider
       Then account butonuna basar
       And senkronizasyon icin 2 saniye bekler
       And email olarak "toGecerliEmail" girer
-      And password olarak "toGecerliPassword" girer
+      And password olarak "toGecersizPassword" girer
       Then signIn butonuna basar
       And basarili giris yapilabildigini test eder
       And senkronizasyon icin 2 saniye bekler

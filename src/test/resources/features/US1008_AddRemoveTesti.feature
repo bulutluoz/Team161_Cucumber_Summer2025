@@ -1,5 +1,5 @@
 
-  @wip
+
   Feature:US1008 kullanici add ve remove butonlarini calistirir
 
     Scenario:TC15 kullanici butonlarin calistigini test eder

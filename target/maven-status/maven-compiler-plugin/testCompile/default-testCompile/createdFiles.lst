@@ -1,0 +1,13 @@
+stepdefinitions/SauceUrlStepdefinitions.class
+stepdefinitions/Hooks.class
+runners/ParalelRun1.class
+runners/ParalelRun2.class
+utilities/Driver.class
+pages/TestotomasyonuPage.class
+utilities/ReusableMethods.class
+stepdefinitions/TestotomasyonuStepdefinitions.class
+runners/Runner.class
+utilities/ConfigReader.class
+stepdefinitions/HerokuStepdefinitions.class
+pages/ZeroWebappPage.class
+pages/SauceUrlPage.class

@@ -7,13 +7,13 @@
       Then account butonuna basar
       And senkronizasyon icin 2 saniye bekler
       And email olarak "toGecerliEmail" girer
-      And password olarak "toGecersizPassword" girer
+      And password olarak "toGecerliPassword" girer
       Then signIn butonuna basar
       And basarili giris yapilabildigini test eder
       And senkronizasyon icin 2 saniye bekler
       Then logout olur
       And senkronizasyon icin 2 saniye bekler
-      And sayfayi kapatir
+
 
     Scenario: TC09 Kullanici gecersiz email yazdiginda giris yapamamali
       Given kullanici "toUrl" anasayfaya gider
@@ -24,7 +24,7 @@
       Then signIn butonuna basar
       And basarili giris yapilamadigini test eder
       And senkronizasyon icin 2 saniye bekler
-      Then sayfayi kapatir
+
     @smoke
     Scenario: TC10 Kullanici gecersiz password yazdiginda giris yapamamali
       Given kullanici "toUrl" anasayfaya gider
@@ -35,7 +35,7 @@
       Then signIn butonuna basar
       And basarili giris yapilamadigini test eder
       And senkronizasyon icin 2 saniye bekler
-      Then sayfayi kapatir
+
 
     Scenario: TC11 Kullanici gecersiz email gecersiz password yazdiginda giris yapamamali
       Given kullanici "toUrl" anasayfaya gider
@@ -46,5 +46,5 @@
       Then signIn butonuna basar
       And basarili giris yapilamadigini test eder
       And senkronizasyon icin 2 saniye bekler
-      Then sayfayi kapatir
+
 

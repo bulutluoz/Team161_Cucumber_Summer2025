@@ -6,4 +6,3 @@
       When arama kutusuna "samsung" yazip aratir
       And senkronizasyon icin 5 saniye bekler
       Then arama sonucunda urun bulunabildigini test eder
-      And sayfayi kapatir

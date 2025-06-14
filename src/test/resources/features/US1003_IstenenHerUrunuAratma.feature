@@ -1,4 +1,4 @@
-
+  @paralel1
   Feature: US1003 kullanici testotomasyonu sayfasinda istedigi kelimeyi aratir
 
     Scenario: TC07 kullanici istedigi kelimeyi aratabilmeli

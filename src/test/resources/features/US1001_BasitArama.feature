@@ -1,4 +1,5 @@
 
+  @paralel1
   Feature: US1001 Kullanici testotomasyonu sayfasinda urun aratir
 
     Scenario: TC01 kullanici phone arattiginda urun bulabilmeli

@@ -1,4 +1,5 @@
 
+  @paralel2
   Feature: US1006 kullanici testotomasyonu sayfasinda liste olarak verilen urunleri aratir
 
     Scenario Outline: TC13 kullanici listedeki herbir urunu aratip bulundugunu test eder
